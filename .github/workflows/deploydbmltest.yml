@@ -33,4 +33,4 @@ jobs:
       - name: Update dbdocs project
         env:
           DBDOCS_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImJhb2xlcXVvYyIsInRva2VuIjoiNzUwNjFhODJjNDY4MDg3OWFhY2VlOGMzMTg2NTgzNWUiLCJpYXQiOjE2NDYxMzA2NzF9.aSpYPwyGT5RvKnyU5zIjRNqk5Nfxx0IgzYPsHKPIlq0
-        run: dbdocs build ./login.dbml
+        run: dbdocs build /home/runner/work/repotest/repotest/login.dbml

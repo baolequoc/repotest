@@ -1,0 +1,26 @@
+Table "users" {
+  "id" int [pk]
+  "username" varchar [unique, not null]
+  "password" varchar
+  "first_name" varchar
+  "last_name" varchar
+}
+
+Table "roles" {
+  "id" int [pk]
+  "role_name" varchar [unique, not null]
+  "mission_name" varchar
+}
+
+Table "users_roles" {
+  "user_id" int
+  "role_id" int
+
+Indexes {
+  (user_id, role_id) [pk]
+}
+}
+
+Ref:"users_roles"."user_id" < "users"."id"
+
+Ref:"users_roles"."role_id" < "roles"."id"
