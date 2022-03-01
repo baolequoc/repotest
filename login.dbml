@@ -1,3 +1,10 @@
+Project Login {
+    databases_type: 'PostgreSQL'
+    Note: '''
+        # Ecommerce Database 
+        ** mardown content here ** 
+    '''
+}
 Table "users" {
   "id" int [pk]
   "username" varchar [unique, not null]
